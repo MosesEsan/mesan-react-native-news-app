@@ -64,6 +64,16 @@ export default function DashBoard(props) {
 
     //6 - RENDER
     if (isFetching) return <ActivityIndicator style={{paddingVertical: 8}}/>;
+    if (error){
+        return (
+            <View style={{flex:1, justifyContent:"center", alignItems:"center"}}>
+                <Text style={{fontSize: 16}}>
+                    {`${error.message}`}
+                </Text>
+                <Text style={{color: "blue", fontSize: 16, padding: 8}} onPress={getData}>Tap to retry</Text>
+            </View>
+        );
+    }
 
     let renderDefaultItem = renderItem();
     let renderHorizontalItem = renderItem(null, true, false, true);

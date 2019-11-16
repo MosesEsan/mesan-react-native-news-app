@@ -15,7 +15,6 @@ export default function Articles(props) {
     const {navigate} = navigation;
 
     //1 - DECLARE VARIABLES
-    const [error, setError] = useState(null);
     const [isRefreshing, setIsRefreshing] = useState(false);
     const [isLoadingMore, setIsLoadingMore] = useState(false);
 
@@ -38,7 +37,7 @@ export default function Articles(props) {
             data = {articles, totalResults} = data;
             dispatch(addCategoryHeadlines(category, data))
         } catch (error) {
-            setError(error);
+            alert(error.message);
         } finally {
             setIsRefreshing(false)
         }
@@ -60,7 +59,7 @@ export default function Articles(props) {
                     let data = await api.getHeadlinesByCategory(category, nextPage);
                     dispatch(addCategoryHeadlines(category, data, nextPage))
                 } catch (error) {
-                    setError(error);
+                    alert(error.message);
                 } finally {
                     setIsLoadingMore(false)
                 }
