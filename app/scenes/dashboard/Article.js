@@ -19,6 +19,7 @@ export default function Article(props) {
 
 Article.navigationOptions = ({navigation}) => {
     return {
-        title: `${navigation.getParam('title')}`
+        title: `${navigation.getParam('title')}`,
+        headerRight: null
     }
 };
