@@ -84,19 +84,18 @@ export default function Articles(props) {
 
     //4 - RENDER FOOTER
     const renderFooter = () => {
-        if (isLoadingMore || !(articles.length < totalResults)) return null;
+        if (!(articles.length < totalResults)) return null;
 
         let footerStyle ={
             position: 'relative',
-            paddingVertical: 40,
-            borderTopWidth: 1,
+            paddingVertical: 20,
             marginTop: 10,
             marginBottom: 10
         };
 
         return (
             <View style={footerStyle}>
-                <ActivityIndicator animating size="large" />
+                <ActivityIndicator/>
             </View>
         );
     };
