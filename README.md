@@ -1,6 +1,6 @@
 # Mesan Digital News App
 
-A News App with Search functionality for iOS and Android devices using https://newsapi.org/ API as data source. 
+A React Native News app with search and load more functionalities for iOS and Android devices using https://newsapi.org/ API as data source. 
 
 The app consists of a Dashboard and Search screen. Articles on the dashboard are grouped by categories in a panel with the option to view more articles for that specific category. 
 
