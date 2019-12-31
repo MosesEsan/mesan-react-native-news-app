@@ -6,7 +6,10 @@ The app consists of a Dashboard and Search screen. Articles on the dashboard are
 
 Articles in a panel can displayed in either a vertical or horizontal direction. Each article will have an image, title, source and published date. The position of the image can either be at the top, left or right. 
 
+### Demo
+![Demo](https://github.com/MosesEsan/mesan-react-native-news-app/blob/master/demo.gif "demo")
+
 View Demo on <a href="https://expo.io/@mosesesan/mesan-digital-news-app">Expo</a> page
 
-Tutorial available on my <a href="https://medium.com/@mosesesan">Medium</a> page
+Tutorial available on my <a href="https://medium.com/swlh/how-to-build-a-news-app-with-search-and-load-more-functionality-using-react-native-and-redux-2875e827cd7f">here</a> page
 
